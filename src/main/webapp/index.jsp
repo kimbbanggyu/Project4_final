@@ -41,22 +41,66 @@
             font-weight: bold;
             height: fit-content;
         }
-        .phone_number{
-            display: block;
+        .phone_num{
+
             text-align: center;
             margin-top: 30px;
             color: black;
             
         }
+        #star1{
+            color: gold;
+            top:220px;
+            right:60px;
+            position:absolute;
+            box-shadow: 3px 3px 3px gold;
+        }
+        #star2{
+            color: gold;
+            top:220px;
+            right:110px;
+            position:absolute;
+            box-shadow: 3px 3px 3px gold;
+        }
+        #star3{
+            color: gold;
+            top:220px;
+            right:160px;
+            position:absolute;
+            box-shadow: 3px 3px 3px gold;
+        }
+        #star4{
+            color: gold;
+             top:220px;
+             right:210px;
+             position:absolute;
+            box-shadow: 3px 3px 3px gold;
+         }
+        #star5{
+            color: gold;
+            top:220px;
+            right:260px;
+            position:absolute;
+            box-shadow: 3px 3px 3px gold;
+        }
+        #star{
+            color: dimgrey;
+            top:260px;
+            right:60px;
+            position:absolute;
+        }
+
+
+
         #autoby{
             position: absolute;
             left:300px;
             width: 200px;
             height: 150px;
-            animation: 3s mymove1 infinite;
+            animation: 2.5s mymove1 infinite;
         }
         @keyframes mymove1{
-            0%{left: 150px;}
+            0%{left: 290px;}
             100%{left: 0px;}
         }
         #phone_num{
@@ -106,9 +150,25 @@
     </div>
     <div class="phone_number">
         <img src="https://image.kmib.co.kr/online_image/2012/1031/121031_22_2.jpg" id="autoby"/>
-        <h1 id="phone_num1">전화 끊자마자 배달 도착!!!</h1>
-        <h1> 모토: 신속 정확~</h1>
-        <h1 id="phone_num">전화번호: <a href="phone.jsp"> 031-692-1881</a></h1>
+        <h1 class="phone_num">전화 끊자마자 배달 도착!!!</h1>
+        <h1 class="phone_num"> 모토: 신속 정확~</h1>
+        <h1 class="phone_num">전화번호: <a href="phone.jsp"> 031-692-1881</a></h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 25 25" id="star1">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 25 25" id="star2">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 25 25" id="star3">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 25 25" id="star4">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 25 25" id="star5">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+        </svg>
+        <h1 id="star">별이 다섯개!!!</h1>
     </div>
     <br>
     <table id="list" width="90%">
@@ -140,6 +200,6 @@
     </table>
     <br>
 
-    <a href="addpostform.jsp" class="btn btn-info">Add New Post</a>
+    <a href="addpostform.jsp" class="btn btn-info">추가하기</a>
 </body>
 </html>

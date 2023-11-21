@@ -87,9 +87,9 @@
                 <c:if test="${vo.getPhoto() ne ''}"><br /><img src="${pageContext.request.contextPath}/upload/${vo.getPhoto()}" style="height:300px; width:300px"></c:if>
             </td></tr>
             <tr><td>가격</td>
-            <td><input type="text" name="price" id="price" style="width: 600px; height: 30px;" value="<%=u.getOrigin() %>"></td></tr>
+            <td><input type="text" name="price" id="price" style="width: 600px; height: 30px;" value="<%=u.getPrice() %>"></td></tr>
             <tr><td>원산지</td>
-            <td><input type="text" name="origin" id="origin" style="width: 600px; height: 30px;" value="<%=u.getPrice() %>"></td></tr>
+            <td><input type="text" name="origin" id="origin" style="width: 600px; height: 30px;" value="<%=u.getOrigin() %>"></td></tr>
             <tr><td>손님 후기</td>
                 <td><textarea name="review" rows="5" style="width: 600px; " ><%=u.getReview() %></textarea></td>
             </table><input type="submit" value="수정하기"/>
